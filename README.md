@@ -2,7 +2,7 @@
 <img width="300" height="300" alt="wizwand autoexp" src="https://github.com/user-attachments/assets/7154cfa2-68d9-46d9-a9ee-a8e535e2933e" />
 </p>
 
-# AutoExp by Wizwand
+# AutoExp 
 
 Wizwand AutoExp (short for "auto experiments"), inspired by [karpathy/autoresearch](https://github.com/karpathy/autoresearch), is a one-line setup that turns any AI/ML training project into an autoresearch-style workflow, enabling AI coding agents (such as Codex or Claude Code) to run experiments automatically and optimize them iteratively.
 
