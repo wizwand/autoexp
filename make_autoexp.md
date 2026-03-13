@@ -1,8 +1,8 @@
-# Prompt to Generate a Repo-Specific `program.md`
+# Prompt to Generate a Repo-Specific `autoexp_program.md`
 
 You are in a machine learning repository.
 
-Your task is to create a repo-specific `program.md` for autonomous training experimentation, based on the instruction below, and a provided template located at https://github.com/wizwand/autoexp/blob/master/program_template.md
+Your task is to create a repo-specific `autoexp_program.md` for autonomous training experimentation, based on the instruction below, and a provided template located at https://github.com/wizwand/autoexp/blob/master/program_template.md
 
 Use the provided generic template as the required structure, but adapt every section to this repository after inspecting the codebase.
 
@@ -25,9 +25,9 @@ Use the provided generic template as the required structure, but adapt every sec
    - what files must remain fixed
    - how to extract results from logs or artifacts
    - likely crash / timeout conditions
-3. Produce a complete `program.md` tailored to this repo.
+3. Produce a complete `autoexp_program.md` tailored to this repo.
 
-## Requirements for the generated `program.md`
+## Requirements for the generated `autoexp_program.md`
 
 - It must be concrete, not generic
 - It must name actual files and commands from this repo
@@ -79,7 +79,7 @@ You are given:
 - Do not change infrastructure, deployment, or unrelated product code
 - Do not be aggressive about modifying preprocessing, evaluation, or benchmark harnesses unless the repo explicitly treats them as tunable
 - Preserve reproducibility and avoid hidden state
-- If the repo is ambiguous, document assumptions explicitly in `program.md`
+- If the repo is ambiguous, document assumptions explicitly in `autoexp_program.md`
 - If multiple training scripts exist, choose the most likely primary one and mention alternatives briefly
 - If no reliable metric is found, define the best available optimization target and explain how to extract it
 - If no explicit time budget exists, define one using the repo’s natural structure, such as one eval cycle, fixed steps, fixed epochs, or a user-configurable max wall-clock budget

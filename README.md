@@ -6,26 +6,30 @@ Wizwand AutoExp (short for "auto experiments"), inspired by [karpathy/autoresear
 
 In your project directory, send your coding agent (such as Codex or Claude Code) this message:
 ```
-Read https://github.com/wizwand/autoexp/blob/main/make_autoexp.md and follow the instructions to create `program.md` in the current directory.
+Read https://github.com/wizwand/autoexp/blob/main/make_autoexp.md and follow the instructions to create `autoexp_program.md` in the current directory.
 ```
 What it does under the hood:
 - Your coding agent will scan the project directory and infer the training command, evaluation metric, and other details from the codebase.
-- It will then create a `program.md` file that defines how to run experiments automatically.
+- It will then create a `autoexp_program.md` file that defines how to run experiments automatically.
 
 ## Run automated experiments
 
 To kick off automated experiments, send your coding agent (such as Codex or Claude Code) this message:
 ```
-Hi, have a look at program.md and let's kick off the experiments!
+Hi, have a look at autoexp_program.md and let's kick off the experiments!
 ```
 What it does under the hood:
-- Your coding agent will read `program.md` and understand the training setup.
+- Your coding agent will read `autoexp_program.md` and understand the training process and configuration.
 - It will run the baseline experiment and record the results in `autoexp_results.tsv`.
-- It will then iteratively run experiments, keeping the best-performing ones and discarding the rest, until the run budget is exhausted.
+- It will then iteratively run experiments, keeping the best-performing ones and discarding the rest.
 
 ## Customization
 
-To customize the experiment setup, edit `program.md` freely to adjust the configuration as needed.
+To customize the experiment setup, edit `autoexp_program.md` freely to adjust the configuration as needed.
+
+## Examples
+
+- Autoresearch but autonomous experiment flow configured by AutoExp: [wizwand/autoresearch-example/program.md](https://github.com/wizwand/autoresearch-example/blob/master/program.md)
 
 ## Community
 
