@@ -174,7 +174,7 @@ Examples of unreasonable experiments:
 
 ## The experiment loop
 
-LOOP:
+LOOP FOREVER:
 
 1. Inspect current git branch and current best result.
 2. Choose one promising experiment.
@@ -187,7 +187,7 @@ LOOP:
    - inspect the tail of the log
    - determine whether the failure is trivial to fix
    - retry only if the fix is small and the experiment idea still makes sense
-8. Record the result in `autoexp.tsv`.
+8. Record the result in `autoexp_results.tsv`.
 9. If the primary metric improved:
    - keep the commit
    - mark status `keep`

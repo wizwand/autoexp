@@ -33,7 +33,7 @@ Use the provided generic template as the required structure, but adapt every sec
 - It must name actual files and commands from this repo
 - It must define a baseline run first
 - It must define a clear keep/discard experiment loop
-- It must specify how to log results into `autoexp.tsv`
+- It must specify how to log results into `autoexp_results.tsv`
 - It must define the primary metric and any secondary constraints
 - It must explain what the agent can and cannot modify
 - It must preserve evaluation integrity
